@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="TestApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestApp</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Parallagram" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="TestApp.jar">
+        <element id="module-output" name="TestApp" />
+      </element>
+      <element id="file-copy" path="X:/Programs/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar" />
+      <element id="file-copy" path="X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6-tests.jar" />
+      <element id="file-copy" path="X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6.jar" />
+    </root>
+  </artifact>
+</component>

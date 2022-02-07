@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #fc4d2f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.classes.controllers.LogInController">
+    <children>
+        <AnchorPane layoutY="96.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: #454f4f;">
+            <children>
+                <BorderPane prefHeight="306.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <left>
+                        <AnchorPane prefHeight="328.0" prefWidth="16.0" style="-fx-background-color: linear-gradient(to right bottom,#fc4d2f, #454f4f);" BorderPane.alignment="CENTER" />
+                    </left>
+                    <right>
+                        <AnchorPane prefHeight="200.0" prefWidth="16.0" style="-fx-background-color: linear-gradient( #fc4d2f, #454f4f);" BorderPane.alignment="CENTER" />
+                    </right>
+                    <bottom>
+                        <AnchorPane prefHeight="30.0" prefWidth="700.0" style="-fx-background-color: linear-gradient(to right, #454f4f, #fc4d2f,#454f4f);" BorderPane.alignment="CENTER" />
+                    </bottom>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <TextField fx:id="email_phone_field" layoutX="140.0" layoutY="90.0" prefHeight="34.0" prefWidth="389.0" promptText="e-mail or phone" style="-fx-border-color: linear-gradient(to right, #fc4d2f,#454f4f,#fc4d2f); -fx-border-radius: 25; -fx-border-width: 3; -fx-background-color: #454f4f; -fx-text-fill: #fff1ef;">
+                                    <font>
+                                        <Font name="DejaVu Sans Bold" size="15.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                                </TextField>
+                                <PasswordField fx:id="password_field" layoutX="140.0" layoutY="145.0" prefHeight="34.0" prefWidth="389.0" promptText="password" style="-fx-background-color: #454f4f; -fx-border-color: linear-gradient(to right, #fc4d2f,#454f4f,#fc4d2f); -fx-border-radius: 25; -fx-border-width: 3; -fx-text-fill: #fff1ef;">
+                                    <font>
+                                        <Font name="DejaVu Sans Bold" size="15.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                                </PasswordField>
+                                <Label layoutX="269.0" layoutY="14.0" prefHeight="68.0" prefWidth="132.0" stylesheets="@../CSSs/labelText.css" text="Log In" textFill="#efc9c9">
+                                    <font>
+                                        <Font name="DejaVu Sans Bold Oblique" size="32.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="next_button" layoutX="278.0" layoutY="213.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #fc4d2f; -fx-effect: dropshadow(three-pass-box,   #fc4d2f, 10px, 0, 0, 0);" text="Next">
+                                    <font>
+                                        <Font name="DejaVu Sans Bold" size="17.0" />
+                                    </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="185.0" layoutY="18.0" prefHeight="55.0" prefWidth="331.0" text="Parallagram" textFill="#313636">
+            <font>
+                <Font name="Magneto Bold" size="48.0" />
+            </font>
+        </Label>
+        <Button fx:id="sign_up_button" layoutX="582.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #454f4f; -fx-effect: dropshadow(three-pass-box,  #454f4f, 10px, 0, 0, 0);" text="Sign Up" textFill="#fff1ef">
+            <font>
+                <Font name="DejaVu Sans Bold" size="16.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Button>
+    </children>
+</AnchorPane>

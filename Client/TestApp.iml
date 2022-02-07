@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.16" level="project" />
+    <orderEntry type="library" name="commons-validator-1.6-javadoc" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://X:/Programs/mysql-connector-java-8.0.16/mysql-connector-java-8.0.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://X:/Java/Libraries/commons-io-2.6/commons-io-2.6-tests.jar!/" />
+          <root url="jar://X:/Java/Libraries/commons-io-2.6/commons-io-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://X:/Java/Libraries/commons-io-2.6/commons-io-2.6-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://X:/Java/Libraries/commons-io-2.6/commons-io-2.6-sources.jar!/" />
+          <root url="jar://X:/Java/Libraries/commons-io-2.6/commons-io-2.6-test-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6-tests.jar!/" />
+          <root url="jar://X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6-sources.jar!/" />
+          <root url="jar://X:/Java/Libraries/commons-validator-1.6/commons-validator-1.6-test-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
