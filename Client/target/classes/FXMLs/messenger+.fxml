@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0"
+            prefWidth="819.0" style="-fx-background-color: #454f4f;" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.classes.controllers.MessengerController">
+    <top>
+        <AnchorPane prefHeight="48.0" prefWidth="819.0" style="-fx-background-color: #fc4d2f;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="136.0" layoutY="-6.0" prefHeight="47.0" prefWidth="385.0"
+                       text="Parallagram" textFill="#313636">
+                    <font>
+                        <Font name="Magneto Bold" size="41.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="name" alignment="CENTER" layoutX="623.0" layoutY="4.0" prefHeight="35.0" prefWidth="172.0"
+                       text="Nickname" textFill="#313636">
+                    <font>
+                        <Font name="Magneto Bold" size="30.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <HBox prefHeight="371.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="363.0" prefWidth="600.0" style="-fx-background-color: #454f4f;">
+                    <children>
+                        <Label fx:id="firstLabel" layoutX="161.0" layoutY="131.0" prefHeight="85.0" prefWidth="314.0"
+                               style="-fx-background-color: #FC5E45; -fx-background-radius: 20; -fx-padding: 5;"
+                               text="SuperMetal, choose whom to speak with in the list to the right"
+                               textAlignment="CENTER" textFill="#fcfafa" wrapText="true">
+                            <font>
+                                <Font name="DejaVu Sans Bold" size="19.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="type" layoutY="345.0" prefHeight="39.0" prefWidth="601.0"
+                                   promptText="You can type your text here..." style="-fx-background-radius: 0;"
+                                   visible="false">
+                            <font>
+                                <Font name="DejaVu Sans Bold Oblique" size="14.0"/>
+                            </font>
+                        </TextField>
+                        <ScrollPane fx:id="chat" hbarPolicy="NEVER" layoutY="22.0" prefHeight="325.0" prefWidth="601.0"
+                                    style="-fx-border-width: 0; -fx-background-color: #454f4f;" visible="false">
+                            <content>
+                                <AnchorPane fx:id="anchorPaneFromScrollPane" minHeight="323.0" minWidth="0.0"
+                                            prefWidth="599.0"
+                                            style="-fx-background-color: #454f4f; -fx-border-width: 0; -fx-padding: 0; -fx-border-color: red;"
+                                            visible="false">
+                                    <children>
+                                        <AnchorPane layoutY="228.0" prefHeight="77.0" prefWidth="290.0" visible="false"
+                                                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="309.0"
+                                                    AnchorPane.topAnchor="10.0">
+                                            <children>
+                                                <Label fx:id="messageText" layoutX="9.0" layoutY="33.0"
+                                                       maxHeight="1000.0" maxWidth="300.0"
+                                                       style="-fx-background-color: white; -fx-background-radius: 30;"
+                                                       text="Ты лох" visible="false" wrapText="true"
+                                                       AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="5.0"
+                                                       AnchorPane.topAnchor="27.0">
+                                                    <font>
+                                                        <Font name="DejaVu Sans Bold" size="14.0"/>
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="3.0" left="5.0" right="10.0" top="3.0"/>
+                                                    </padding>
+                                                </Label>
+                                                <Label fx:id="messageTime" prefWidth="60.0" text="16:58:28"
+                                                       textFill="WHITE" visible="false" AnchorPane.bottomAnchor="0.0"
+                                                       AnchorPane.leftAnchor="10.0">
+                                                    <font>
+                                                        <Font name="DejaVu Sans Bold" size="11.0"/>
+                                                    </font>
+                                                </Label>
+                                                <Label fx:id="messageNickname" layoutY="146.0" prefWidth="97.0"
+                                                       text="Nickname" textFill="#fcf0f0" visible="false"
+                                                       AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                                                    <font>
+                                                        <Font name="Magneto Bold" size="17.0"/>
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                        <Label fx:id="nickname" alignment="CENTER" prefHeight="25.0" prefWidth="601.0"
+                               style="-fx-background-color: цршеу;" text="User nickname" textFill="#f2f2f2"
+                               visible="false">
+                            <font>
+                                <Font name="DejaVu Sans Bold" size="16.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="370.0" prefWidth="12.0"
+                            style="-fx-background-color: #fc4d2f; -fx-border-color: #fc4d2f; -fx-border-width: 2;"/>
+                <AnchorPane fx:id="usersPane" prefHeight="363.0" prefWidth="195.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="2.0" layoutY="4.0" prefHeight="26.0" prefWidth="203.0"
+                               style="-fx-background-color: grey; -fx-background-radius: 20px;" text="Users online"
+                               textFill="#f5efef">
+                            <font>
+                                <Font name="DejaVu Sans Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

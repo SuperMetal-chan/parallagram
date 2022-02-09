@@ -1,0 +1,12 @@
+.label {
+    -fx-font-size: 32px;
+	-fx-font-family: "DejaVu Sans";
+	-fx-font-style: oblique;
+	-fx-font-weight: bold;
+}
+
+.text {	
+	-fx-fill:   #454f4f;
+    -fx-stroke: #fc4d2f;
+    -fx-stroke-width: 2px;
+}
